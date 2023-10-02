@@ -13,6 +13,11 @@
 		C2773A502AC6A76700357344 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2773A4E2AC6A76700357344 /* Main.storyboard */; };
 		C2773A522AC6A76900357344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2773A512AC6A76900357344 /* Assets.xcassets */; };
 		C2773A552AC6A76900357344 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2773A532AC6A76900357344 /* LaunchScreen.storyboard */; };
+		C2C5ED102ACA71F1000919D2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C5ED0F2ACA71F1000919D2 /* HomeViewController.swift */; };
+		C2C5ED132ACA7376000919D2 /* firstTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C5ED122ACA7376000919D2 /* firstTable.swift */; };
+		C2D494AC2AC9A30100B4E124 /* SkyFloatingLabelTextField in Frameworks */ = {isa = PBXBuildFile; productRef = C2D494AB2AC9A30100B4E124 /* SkyFloatingLabelTextField */; };
+		C2D494AE2AC9A33D00B4E124 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D494AD2AC9A33D00B4E124 /* RegisterViewController.swift */; };
+		C2D494B22AC9B06B00B4E124 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D494B12AC9B06B00B4E124 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,10 @@
 		C2773A512AC6A76900357344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2773A542AC6A76900357344 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2773A562AC6A76900357344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2C5ED0F2ACA71F1000919D2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C2C5ED122ACA7376000919D2 /* firstTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstTable.swift; sourceTree = "<group>"; };
+		C2D494AD2AC9A33D00B4E124 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		C2D494B12AC9B06B00B4E124 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2D494AC2AC9A30100B4E124 /* SkyFloatingLabelTextField in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +66,91 @@
 		C2773A472AC6A76700357344 /* LearnMVPandMVVM */ = {
 			isa = PBXGroup;
 			children = (
-				C2773A482AC6A76700357344 /* AppDelegate.swift */,
-				C2773A4A2AC6A76700357344 /* SceneDelegate.swift */,
-				C2773A4C2AC6A76700357344 /* ViewController.swift */,
-				C2773A4E2AC6A76700357344 /* Main.storyboard */,
+				C2C5ED0E2ACA6EF8000919D2 /* Application */,
+				C2C5ED0D2ACA6ED5000919D2 /* Heper */,
+				C2C5ED0C2ACA6EC0000919D2 /* Constant */,
+				C2C5ED0B2ACA6EA4000919D2 /* Extension */,
+				C2773A612AC6A82600357344 /* ViewModel */,
+				C2773A5E2AC6A78D00357344 /* Model */,
+				C2773A5D2AC6A78800357344 /* View */,
 				C2773A512AC6A76900357344 /* Assets.xcassets */,
-				C2773A532AC6A76900357344 /* LaunchScreen.storyboard */,
 				C2773A562AC6A76900357344 /* Info.plist */,
 			);
 			path = LearnMVPandMVVM;
+			sourceTree = "<group>";
+		};
+		C2773A5D2AC6A78800357344 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C2773A602AC6A79F00357344 /* StoryBoard */,
+				C2773A5F2AC6A79800357344 /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C2773A5E2AC6A78D00357344 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C2C5ED122ACA7376000919D2 /* firstTable.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C2773A5F2AC6A79800357344 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C2773A4C2AC6A76700357344 /* ViewController.swift */,
+				C2D494AD2AC9A33D00B4E124 /* RegisterViewController.swift */,
+				C2D494B12AC9B06B00B4E124 /* MainViewController.swift */,
+				C2C5ED0F2ACA71F1000919D2 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C2773A602AC6A79F00357344 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				C2773A4E2AC6A76700357344 /* Main.storyboard */,
+				C2773A532AC6A76900357344 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		C2773A612AC6A82600357344 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C2C5ED0B2ACA6EA4000919D2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C2C5ED0C2ACA6EC0000919D2 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		C2C5ED0D2ACA6ED5000919D2 /* Heper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Heper;
+			sourceTree = "<group>";
+		};
+		C2C5ED0E2ACA6EF8000919D2 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C2773A482AC6A76700357344 /* AppDelegate.swift */,
+				C2773A4A2AC6A76700357344 /* SceneDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +169,9 @@
 			dependencies = (
 			);
 			name = LearnMVPandMVVM;
+			packageProductDependencies = (
+				C2D494AB2AC9A30100B4E124 /* SkyFloatingLabelTextField */,
+			);
 			productName = LearnMVPandMVVM;
 			productReference = C2773A452AC6A76700357344 /* LearnMVPandMVVM.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +200,9 @@
 				Base,
 			);
 			mainGroup = C2773A3C2AC6A76700357344;
+			packageReferences = (
+				C2D494AA2AC9A30100B4E124 /* XCRemoteSwiftPackageReference "SkyFloatingLabelTextField" */,
+			);
 			productRefGroup = C2773A462AC6A76700357344 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,6 +233,10 @@
 				C2773A4D2AC6A76700357344 /* ViewController.swift in Sources */,
 				C2773A492AC6A76700357344 /* AppDelegate.swift in Sources */,
 				C2773A4B2AC6A76700357344 /* SceneDelegate.swift in Sources */,
+				C2C5ED132ACA7376000919D2 /* firstTable.swift in Sources */,
+				C2D494AE2AC9A33D00B4E124 /* RegisterViewController.swift in Sources */,
+				C2D494B22AC9B06B00B4E124 /* MainViewController.swift in Sources */,
+				C2C5ED102ACA71F1000919D2 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,13 +383,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G6FAM24LXJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LearnMVPandMVVM/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,13 +412,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G6FAM24LXJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LearnMVPandMVVM/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,6 +456,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C2D494AA2AC9A30100B4E124 /* XCRemoteSwiftPackageReference "SkyFloatingLabelTextField" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Skyscanner/SkyFloatingLabelTextField.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C2D494AB2AC9A30100B4E124 /* SkyFloatingLabelTextField */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2D494AA2AC9A30100B4E124 /* XCRemoteSwiftPackageReference "SkyFloatingLabelTextField" */;
+			productName = SkyFloatingLabelTextField;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C2773A3D2AC6A76700357344 /* Project object */;
 }
